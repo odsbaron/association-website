@@ -14,7 +14,7 @@ export default function Home() {
               欢迎来到协会官方网站
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
-              记录成长，分享知识，连接未来
+              记录成长，分享知识，连接未来 🌟 已部署上线
             </p>
             <div className="flex gap-4 justify-center">
               <Link
