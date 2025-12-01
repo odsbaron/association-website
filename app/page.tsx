@@ -1,0 +1,169 @@
+import Link from "next/link";
+import { getAllPosts } from "@/lib/posts";
+
+export default function Home() {
+  const recentPosts = getAllPosts().slice(0, 3);
+
+  return (
+    <div className="w-full">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              欢迎来到协会官方网站
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 opacity-90">
+              记录成长，分享知识，连接未来
+            </p>
+            <div className="flex gap-4 justify-center">
+              <Link
+                href="/blog"
+                className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                浏览文章
+              </Link>
+              <Link
+                href="/about"
+                className="bg-transparent border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
+              >
+                了解更多
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-xl font-semibold mb-2">我们的使命</h3>
+              <p className="text-gray-600">
+                促进成员交流，提升专业技能，共同成长进步
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🚀</div>
+              <h3 className="text-xl font-semibold mb-2">我们的愿景</h3>
+              <p className="text-gray-600">
+                打造一个开放、包容、创新的学习交流平台
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">💡</div>
+              <h3 className="text-xl font-semibold mb-2">我们的价值观</h3>
+              <p className="text-gray-600">
+                分享、协作、创新、卓越
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Recent Posts */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center mb-8">
+            <h2 className="text-3xl font-bold">最新文章</h2>
+            <Link href="/blog" className="text-primary hover:underline">
+              查看全部 →
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {recentPosts.length > 0 ? (
+              recentPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <div className="text-sm text-gray-500 mb-2">{post.date}</div>
+                  <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
+                  <p className="text-gray-600 mb-4">{post.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {post.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </Link>
+              ))
+            ) : (
+              <div className="col-span-3 text-center py-12 text-gray-500">
+                暂无文章，敬请期待...
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Links */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-center">快速导航</h2>
+          <div className="grid md:grid-cols-4 gap-6">
+            <Link
+              href="/timeline"
+              className="p-6 border-2 border-gray-200 rounded-lg hover:border-primary transition-colors text-center"
+            >
+              <div className="text-4xl mb-3">📅</div>
+              <h3 className="font-semibold">发展历程</h3>
+            </Link>
+            <Link
+              href="/archives"
+              className="p-6 border-2 border-gray-200 rounded-lg hover:border-primary transition-colors text-center"
+            >
+              <div className="text-4xl mb-3">📚</div>
+              <h3 className="font-semibold">资料库</h3>
+            </Link>
+            <Link
+              href="/members"
+              className="p-6 border-2 border-gray-200 rounded-lg hover:border-primary transition-colors text-center"
+            >
+              <div className="text-4xl mb-3">👥</div>
+              <h3 className="font-semibold">成员介绍</h3>
+            </Link>
+            <Link
+              href="/links"
+              className="p-6 border-2 border-gray-200 rounded-lg hover:border-primary transition-colors text-center"
+            >
+              <div className="text-4xl mb-3">🔗</div>
+              <h3 className="font-semibold">相关链接</h3>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold mb-2">100+</div>
+              <div className="text-gray-400">协会成员</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-gray-400">举办活动</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">200+</div>
+              <div className="text-gray-400">文章分享</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">5年</div>
+              <div className="text-gray-400">发展历程</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
