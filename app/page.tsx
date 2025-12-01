@@ -17,7 +17,7 @@ export default function Home() {
               Peking University FinTech Association
             </p>
             <p className="text-lg md:text-xl mb-8 opacity-90">
-              记录成长，分享知识，连接未来
+              高效学术，开源宣传，动态联合
             </p>
             <div className="flex gap-4 justify-center">
               <Link
