@@ -88,8 +88,11 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center text-gray-400">
-          <p>© {currentYear} 协会官方网站. All rights reserved.</p>
+          <p>© {currentYear} 北京大学金融科技协会. All rights reserved.</p>
           <p className="mt-2">
+            Peking University FinTech Association
+          </p>
+          <p className="mt-1">
             Built with ❤️ using Next.js & Tailwind CSS
           </p>
         </div>

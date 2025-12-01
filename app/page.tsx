@@ -11,10 +11,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              欢迎来到协会官方网站
+              北京大学金融科技协会
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
-              记录成长，分享知识，连接未来 🌟 已部署上线
+              Peking University FinTech Association
+            </p>
+            <p className="text-lg md:text-xl mb-8 opacity-90">
+              记录成长，分享知识，连接未来
             </p>
             <div className="flex gap-4 justify-center">
               <Link
@@ -39,24 +42,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl mb-4">🎯</div>
-              <h3 className="text-xl font-semibold mb-2">我们的使命</h3>
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-xl font-semibold mb-2">金融科技</h3>
               <p className="text-gray-600">
-                促进成员交流，提升专业技能，共同成长进步
+                探索金融与科技的深度融合，推动行业创新发展
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-4">🚀</div>
-              <h3 className="text-xl font-semibold mb-2">我们的愿景</h3>
+              <div className="text-4xl mb-4">🎓</div>
+              <h3 className="text-xl font-semibold mb-2">学术研究</h3>
               <p className="text-gray-600">
-                打造一个开放、包容、创新的学习交流平台
+                深入研究前沿技术，培养跨学科创新思维
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-4">💡</div>
-              <h3 className="text-xl font-semibold mb-2">我们的价值观</h3>
+              <div className="text-4xl mb-4">🤝</div>
+              <h3 className="text-xl font-semibold mb-2">行业交流</h3>
               <p className="text-gray-600">
-                分享、协作、创新、卓越
+                连接学界与业界，搭建实践与成长的桥梁
               </p>
             </div>
           </div>
@@ -146,20 +149,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">100+</div>
+              <div className="text-4xl font-bold mb-2">150+</div>
               <div className="text-gray-400">协会成员</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-gray-400">举办活动</div>
+              <div className="text-4xl font-bold mb-2">80+</div>
+              <div className="text-gray-400">学术活动</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">200+</div>
-              <div className="text-gray-400">文章分享</div>
+              <div className="text-4xl font-bold mb-2">30+</div>
+              <div className="text-gray-400">企业合作</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">5年</div>
-              <div className="text-gray-400">发展历程</div>
+              <div className="text-4xl font-bold mb-2">5年+</div>
+              <div className="text-gray-400">砥砺前行</div>
             </div>
           </div>
         </div>

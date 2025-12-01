@@ -7,8 +7,9 @@ export default function AboutPage() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">协会简介</h2>
           <p className="text-gray-700 leading-7">
-            我们是一个由热爱技术、追求创新的同学组成的学生社团。自2020年成立以来，
-            协会致力于为成员提供一个开放、包容的学习交流平台，促进技术分享和知识传播。
+            北京大学金融科技协会（Peking University FinTech Association）是一个由热爱金融科技、
+            追求创新的同学组成的学生社团。自2020年成立以来，
+            我们致力于为成员提供一个开放、包容的学习交流平台，促进金融科技知识分享和创新思维培养。
           </p>
         </section>
 
@@ -18,14 +19,15 @@ export default function AboutPage() {
             <div>
               <h3 className="text-lg font-semibold mb-2">🎯 我们的使命</h3>
               <p className="text-gray-700">
-                促进成员之间的技术交流，提升专业技能，培养创新思维，共同成长进步。
+                促进金融科技知识传播，提升成员专业技能，培养跨学科创新思维，
+                连接金融与科技，培养具有国际视野的复合型人才。
               </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2">🚀 我们的愿景</h3>
               <p className="text-gray-700">
-                打造校内一流的技术社团，成为学生技术交流的首选平台，
-                为成员的个人发展和职业规划提供有力支持。
+                打造国内顶尖的金融科技学生组织，成为金融科技领域学习交流的首选平台，
+                为成员的学术发展和职业规划提供有力支持，推动金融科技创新发展。
               </p>
             </div>
           </div>
@@ -81,13 +83,13 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold mb-4">联系我们</h2>
           <div className="space-y-2">
             <p className="text-gray-700">
-              📧 邮箱：info@association.com
+              📧 邮箱：contact@pku-fintech.org
             </p>
             <p className="text-gray-700">
-              📱 微信公众号：协会官方
+              📱 微信公众号：北大金融科技协会
             </p>
             <p className="text-gray-700">
-              💻 GitHub：github.com/association
+              💻 GitHub：github.com/pku-fintech
             </p>
           </div>
         </section>
