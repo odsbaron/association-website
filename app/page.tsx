@@ -42,24 +42,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl mb-4">💰</div>
-              <h3 className="text-xl font-semibold mb-2">金融科技</h3>
+              <div className="text-4xl mb-4">📚</div>
+              <h3 className="text-xl font-semibold mb-2">高效学术</h3>
               <p className="text-gray-600">
-                探索金融与科技的深度融合，推动行业创新发展
+                深耕金融科技前沿领域，促进学术交流与知识共享
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-4">🎓</div>
-              <h3 className="text-xl font-semibold mb-2">学术研究</h3>
+              <div className="text-4xl mb-4">💡</div>
+              <h3 className="text-xl font-semibold mb-2">开源宣传</h3>
               <p className="text-gray-600">
-                深入研究前沿技术，培养跨学科创新思维
+                传播开源精神，推动技术创新与行业发展
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-xl font-semibold mb-2">行业交流</h3>
+              <div className="text-4xl mb-4">🔗</div>
+              <h3 className="text-xl font-semibold mb-2">动态联合</h3>
               <p className="text-gray-600">
-                连接学界与业界，搭建实践与成长的桥梁
+                连接学界与业界，构建多元化协作生态
               </p>
             </div>
           </div>
