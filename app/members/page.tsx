@@ -22,7 +22,7 @@ export default function MembersPage() {
           <span className="text-3xl">👑</span>
           会长团
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-6">
           {members
             .filter((m) => m.role === "会长" || m.role === "副会长")
             .map((member) => (
