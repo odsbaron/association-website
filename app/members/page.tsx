@@ -1,7 +1,13 @@
 import { getMembers } from "@/lib/members";
+import Image from "next/image";
 
 export default function MembersPage() {
   const members = getMembers();
+
+  // 判断是否为图片URL
+  const isImageUrl = (avatar: string) => {
+    return avatar.startsWith('http') || avatar.startsWith('/') || avatar.endsWith('.png') || avatar.endsWith('.jpg') || avatar.endsWith('.jpeg') || avatar.endsWith('.gif');
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -25,8 +31,18 @@ export default function MembersPage() {
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <div className="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                  <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center text-6xl shadow-lg">
-                    {member.avatar}
+                  <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center text-6xl shadow-lg overflow-hidden">
+                    {isImageUrl(member.avatar) ? (
+                      <Image
+                        src={member.avatar}
+                        alt={member.name}
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      member.avatar
+                    )}
                   </div>
                 </div>
                 <div className="p-6">
@@ -89,8 +105,18 @@ export default function MembersPage() {
                 key={member.name}
                 className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow text-center"
               >
-                <div className="w-20 h-20 bg-gradient-to-br from-secondary to-purple-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-4 shadow">
-                  {member.avatar}
+                <div className="w-20 h-20 bg-gradient-to-br from-secondary to-purple-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-4 shadow overflow-hidden">
+                  {isImageUrl(member.avatar) ? (
+                    <Image
+                      src={member.avatar}
+                      alt={member.name}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    member.avatar
+                  )}
                 </div>
                 <h3 className="font-bold mb-1">{member.name}</h3>
                 <p className="text-sm text-primary mb-2">{member.role}</p>
@@ -124,8 +150,18 @@ export default function MembersPage() {
                 key={member.name}
                 className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-3 shadow">
-                  {member.avatar}
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-3 shadow overflow-hidden">
+                  {isImageUrl(member.avatar) ? (
+                    <Image
+                      src={member.avatar}
+                      alt={member.name}
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    member.avatar
+                  )}
                 </div>
                 <h3 className="font-semibold text-sm mb-1">{member.name}</h3>
                 <p className="text-xs text-gray-600 mb-2 line-clamp-2">

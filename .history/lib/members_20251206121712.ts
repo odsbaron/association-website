@@ -17,7 +17,7 @@ export function getMembers(): Member[] {
     {
       name: "欧岱松",
       role: "会长",
-      avatar: "/images/avatars/25_oudaisong.jpg",
+      avatar: "👨‍💼",
       bio: "25级数量金科  INFJ 热爱干饭和运动  量化研究探索中",
       skills: ["Python", "Linux","Redis","SQL"],
       contact: {
@@ -28,7 +28,7 @@ export function getMembers(): Member[] {
     {
       name: "欧阳宏禹",
       role: "学术副会",
-      avatar: "/images/avatars/25_ouyanghongyu.jpg",
+      avatar: "👩‍💼",
       bio: "25级数量金科 主要研究方向是股票多因子和深度学习模型",
       skills: ["React", "Vue", "UI/UX", "TypeScript"],
       contact: {
@@ -39,7 +39,7 @@ export function getMembers(): Member[] {
     {
       name: "郭禹宏",
       role: "内外联副会",
-      avatar: "/images/avatars/25_guoyuhong.jpg",
+      avatar: "🧑‍💻",
       bio: "25级经济学双学位  ISTJ 喜欢摄影和历史  职业路径探索中 喜欢流程图很好看的模型",
       skills: ["Python", "TensorFlow", "PyTorch", "数据科学"],
       contact: {
@@ -50,7 +50,7 @@ export function getMembers(): Member[] {
     {
       name: "王一茗",
       role: "宣传副会",
-      avatar: "/images/avatars/25_wangyiming.jpg",
+      avatar: "👩‍💼",
       bio: "人工智能专业，机器学习研究者",
       skills: ["Python", "TensorFlow", "PyTorch", "数据科学"],
       contact: {

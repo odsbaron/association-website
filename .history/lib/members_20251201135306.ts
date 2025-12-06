@@ -15,42 +15,31 @@ export function getMembers(): Member[] {
   return [
     // 会长团
     {
-      name: "欧岱松",
+      name: "张晓明",
       role: "会长",
-      avatar: "/images/avatars/25_oudaisong.jpg",
-      bio: "25级数量金科  INFJ 热爱干饭和运动  量化研究探索中",
-      skills: ["Python", "Linux","Redis","SQL"],
+      avatar: "👨‍💼",
+      bio: "计算机科学专业，全栈开发工程师，热爱开源",
+      skills: ["Node.js", "React", "Python", "DevOps"],
       contact: {
-        email: "dsou25@stu.pku.edu.cn",
-        github: "https://github.com/odsbaron",
+        email: "zhangxiaoming@example.com",
+        github: "https://github.com/zhangxiaoming",
       },
     },
     {
-      name: "欧阳宏禹",
-      role: "学术副会",
-      avatar: "/images/avatars/25_ouyanghongyu.jpg",
-      bio: "25级数量金科 主要研究方向是股票多因子和深度学习模型",
+      name: "李梅",
+      role: "副会长",
+      avatar: "👩‍💼",
+      bio: "软件工程专业，前端开发专家，UX设计师",
       skills: ["React", "Vue", "UI/UX", "TypeScript"],
       contact: {
-        email: "dsou25@stu.pku.edu.cn",
+        email: "limei@example.com",
         github: "https://github.com/limei",
       },
     },
     {
-      name: "郭禹宏",
-      role: "内外联副会",
-      avatar: "/images/avatars/25_guoyuhong.jpg",
-      bio: "25级经济学双学位  ISTJ 喜欢摄影和历史  职业路径探索中 喜欢流程图很好看的模型",
-      skills: ["Python", "TensorFlow", "PyTorch", "数据科学"],
-      contact: {
-        email: "wangqiang@example.com",
-        github: "https://github.com/wangqiang",
-      },
-    },
-    {
-      name: "王一茗",
-      role: "宣传副会",
-      avatar: "/images/avatars/25_wangyiming.jpg",
+      name: "王强",
+      role: "副会长",
+      avatar: "🧑‍💻",
       bio: "人工智能专业，机器学习研究者",
       skills: ["Python", "TensorFlow", "PyTorch", "数据科学"],
       contact: {
@@ -58,7 +47,6 @@ export function getMembers(): Member[] {
         github: "https://github.com/wangqiang",
       },
     },
-
 
     // 部长团
     {
