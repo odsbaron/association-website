@@ -149,6 +149,41 @@ export function getLinkCategories(): LinkCategory[] {
       ],
     },
     {
+      name: "技术社区",
+      description: "优质技术社区和论坛",
+      icon: "👥",
+      links: [
+        {
+          name: "掘金",
+          url: "https://juejin.cn",
+          description: "中文技术社区",
+          icon: "⛏️",
+          tags: ["中文", "社区"],
+        },
+        {
+          name: "V2EX",
+          url: "https://v2ex.com",
+          description: "创意工作者社区",
+          icon: "🌟",
+          tags: ["社区", "讨论"],
+        },
+        {
+          name: "DEV Community",
+          url: "https://dev.to",
+          description: "程序员写作社区",
+          icon: "✍️",
+          tags: ["博客", "英文"],
+        },
+        {
+          name: "Reddit r/programming",
+          url: "https://reddit.com/r/programming",
+          description: "国际程序员论坛",
+          icon: "🗨️",
+          tags: ["论坛", "英文"],
+        },
+      ],
+    },
+    {
       name: "合作伙伴",
       description: "校企合作单位和友好组织",
       icon: "🤝",
