@@ -27,7 +27,7 @@ export function getMembers(): Member[] {
     },
     {
       name: "欧阳宏禹",
-      role: "副会长",
+      role: "学术副会",
       avatar: "/images/avatars/25_ouyanghongyu.jpg",
       bio: "25级数量金科 主要研究方向是股票多因子和深度学习模型",
       skills: ["啥都会"],
@@ -38,7 +38,7 @@ export function getMembers(): Member[] {
     },
     {
       name: "郭禹宏",
-      role: "副会长",
+      role: "内外联副会",
       avatar: "/images/avatars/25_guoyuhong.jpg",
       bio: "25级经济学双学位  ISTJ 喜欢摄影和历史  职业路径探索中 喜欢流程图很好看的模型",
       skills: ["Python",  "数据科学"],
@@ -49,7 +49,7 @@ export function getMembers(): Member[] {
     },
     {
       name: "王一茗",
-      role: "副会长",
+      role: "宣传副会",
       avatar: "/images/avatars/25_wangyiming.jpg",
       bio: "25级数量金科 INFJ  喜欢干饭和保卫萝卜 互联网数科/量化研究探索中",
       skills: ["Python", "TensorFlow", "PyTorch", "数据科学"],
