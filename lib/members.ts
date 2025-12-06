@@ -30,7 +30,7 @@ export function getMembers(): Member[] {
       role: "学术副会",
       avatar: "/images/avatars/25_ouyanghongyu.jpg",
       bio: "25级数量金科 主要研究方向是股票多因子和深度学习模型",
-      skills: ["React", "Vue", "UI/UX", "TypeScript"],
+      skills: ["啥都会"],
       contact: {
         email: "dsou25@stu.pku.edu.cn",
         github: "https://github.com/limei",
@@ -41,7 +41,7 @@ export function getMembers(): Member[] {
       role: "内外联副会",
       avatar: "/images/avatars/25_guoyuhong.jpg",
       bio: "25级经济学双学位  ISTJ 喜欢摄影和历史  职业路径探索中 喜欢流程图很好看的模型",
-      skills: ["Python", "TensorFlow", "PyTorch", "数据科学"],
+      skills: ["Python",  "数据科学"],
       contact: {
         email: "wangqiang@example.com",
         github: "https://github.com/wangqiang",
