@@ -76,8 +76,7 @@ export default function HeroCarousel() {
             index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          {/* Background Image with Overlay */}
-          <div className="absolute inset-0 bg-black/40 z-10" />
+          {/* Background Image */}
           <Image
             src={slide.image}
             alt={slide.title}
@@ -87,18 +86,18 @@ export default function HeroCarousel() {
           />
 
           {/* Content */}
-          <div className="relative z-20 h-full flex items-center justify-center">
+          <div className="relative z-10 h-full flex items-center justify-center">
             <div className="text-center text-white px-4 max-w-4xl">
               <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
                 {slide.title}
               </h1>
               {slide.subtitle && (
-                <p className="text-xl md:text-2xl mb-4 opacity-90 drop-shadow-md">
+                <p className="text-xl md:text-2xl mb-4 drop-shadow-md">
                   {slide.subtitle}
                 </p>
               )}
               {slide.description && (
-                <p className="text-lg md:text-xl mb-8 opacity-90 drop-shadow-md">
+                <p className="text-lg md:text-xl mb-8 drop-shadow-md">
                   {slide.description}
                 </p>
               )}
