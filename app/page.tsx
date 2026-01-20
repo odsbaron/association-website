@@ -1,41 +1,14 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
+import HeroCarousel from "@/components/HeroCarousel";
 
 export default function Home() {
   const recentPosts = getAllPosts().slice(0, 3);
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              北京大学金融科技协会
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-90">
-              Peking University FinTech Association
-            </p>
-            <p className="text-lg md:text-xl mb-8 opacity-90">
-              高效学术，开源宣传，动态联合
-            </p>
-            <div className="flex gap-4 justify-center">
-              <Link
-                href="/blog"
-                className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                浏览文章
-              </Link>
-              <Link
-                href="/about"
-                className="bg-transparent border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
-              >
-                了解更多
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Carousel */}
+      <HeroCarousel />
 
       {/* About Section */}
       <section className="py-16 bg-white">
